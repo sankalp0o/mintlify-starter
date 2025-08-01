@@ -7,9 +7,141 @@ description: "Get started with LitmusCheck and learn how to write tests"
 LitmusCheck is a AI-powered QA service for writing test automation. We write reliable end-to-end tests for web and mobile apps for fast moving dev teams.
 
 
-## Setting up
+## Getting started
 
-Get your documentation site up and running in minutes.
+LitmusCheck provides you human experts and an AI platform that can help you write test automation to improve the reliability of your product. You can get started either by:
+
+- **Start onboarding**  
+  If you want to work with us, schedule a call with one of our testing experts who will set things up for you.
+
+- **Start a trial**  
+  Create a trial account by going to [Sign up page](https://www.litmuscheck.com/sign-up) and following the onscreen instructions. The trial account comes with limited functionality— not all features mentioned in the docs will be available. If you want to experience a demo of the complete LitmusCheck experience, reach out to us.
+![LitmusCheck landing page](/images/landing-page.png)
+---
+
+## Creating new suites and tests
+**View your suites**  
+Once you’re logged in, your test suites appear in the left sidebar of your homepage.  
+![Dashboard](/images/homepage.png)
+
+**Create a suite**  
+Click the **New** button at the top of the sidebar.  
+
+**View suite details**  
+Click any suite name in the sidebar to see all tests within that suite.  
+![Suite](/images/suite-view.png)
+
+**Create a test**  
+Inside a suite, click the **New Test** button on the right.
+
+
+---
+
+## Composing tests
+
+### Compose View  
+Create tests with your AI agent assisted by a live browser view.
+![Compose](/images/compose.png)
+
+
+### Live browser view  
+The browser pane on the right shows your test in action.  
+- Click **Start Run** to open the session.  
+- Click **Stop** to end it.  
+- Click **Rerun** to restart from the first step.
+![Live view](/images/live-browser.png)
+
+
+### Two ways to create tests
+
+#### 1. Instructions  
+![Instructions](/images/instructions.png)
+Click **Add an instruction** and choose from:  
+- **Click**: perform a mouse click  
+- **Hover**: perform a mouse hover  
+- **Select**: choose an option from a dropdown  
+- **Input**: enter text into a field  
+- **Go to URL**: navigate to a URL  
+- **Go back**: go back in browser history  
+- **New Tab**: open a URL in a new tab  
+- **Run Script**: execute custom JavaScript (e.g., API calls or Playwright functions)  
+- **Verify**: generate or write custom verification logic  
+- **Reuse**: embed another test from the same suite  
+
+> **Note:** You can edit/reorder/delete instructions when the live run is stopped. Once running, you can only append new steps.
+
+#### 2. Goal agent  
+![Goal Agent](/images/goal-agent.png)
+Enter a natural-language goal in the bottom input and click **Go**. The autonomous agent will attempt all available actions to reach your goal. When complete (or if it gets stuck), it will show the sequence of steps it took. You can discard them or add them to your test.
+
+> **Tip:** Keep goals simple for best results.
+
+### Viewing script and selectors  
+When an instruction runs, its generated script appears in the script box. Click the element description to toggle between available selectors.
+
+### Saving and discarding  
+- Click **Save** to persist your test (there is no autosave).  
+- Click **Discard** to throw away unsaved changes.
+
+---
+
+## Running suites and tests
+
+### Running once  
+- **Suite**: navigate to the suite and click **Run**.  
+- **Test**: navigate to the test and click **Run**.
+![Run test](/images/test-actions.png)
+
+
+### Scheduling suite runs  
+![Scheduling runs](/images/schedule.png)
+1. Open the suite and select the **Schedules** tab.  
+2. Click **Add Schedule**.  
+3. Choose hourly or daily recurrence.  
+4. All schedules for that suite appear in this view.
+
+> **Note:** Tests marked **Draft** will be skipped in automated runs but can be executed manually.
+
+### External triggers  
+Contact us to set up CI/CD or GitHub Actions triggers via our API.
+
+---
+
+## Viewing run logs
+
+### Suite run logs  
+All suite runs—manual, scheduled, or external—are logged.  
+1. Go to the suite.  
+2. Click the **Logs** tab.  
+3. Select a run to see a summary of its tests.
+
+### Test run logs  
+All test runs are logged, whether run individually or as part of a suite.  
+1. Go to the test.  
+2. Click the **Logs** tab for a run history.
+
+### Debugging and run proofs  
+![Test runs](/images/test-logs.png)
+- View warnings and errors in the logs.  
+- See a GIF of each step.  
+- Click **Playwright Trace** for console logs, network logs, and timestamped screenshots.
+
+### Slack alerts  
+1. Go to **Settings** (top nav bar).  
+2. Enter your Slack channel webhook URL.  
+3. Click **Save**.  
+
+You’ll receive alerts with pass/fail/skip counts and details on failed or skipped tests.
+
+---
+
+## Viewing and exporting test scripts
+![Test script](/images/script.png)
+1. Navigate to the test.  
+2. Click the **Scripts** tab to see the generated script for each instruction.  
+3. Click **Export** to download the full test.
+
+
 
 
 
