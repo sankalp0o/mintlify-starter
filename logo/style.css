@@ -1,0 +1,5 @@
+/* style.css */
+/* target the logo element in the navbar */
+.nav-logo img {
+    height: 2.5rem;
+}
